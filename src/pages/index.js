@@ -97,20 +97,18 @@ export default function Home() {
             <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div className="sm:text-center lg:text-left">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-                  <span className="block text-pink-600 xl:inline">Sweet tools</span>{' '}
-                  <span className="block xl:inline">to build your online business</span>
+                  <div className="block text-slate-800">Clojure Camp</div>{' '}
+                  <div className="block text-orange-600">Clojure is for Everyone</div>
                 </h1>
 
                 <p className="mt-3 text-base text-gray-700 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-8 md:text-xl lg:mx-0">
 
-                  Donut is a framework for building, deploying, and growing your
-                  software-as-a-service business. It's designed to let you focus
-                  on your core product, not on endless unrelated chores. Coming soon!
+                  Clojure Camp is ...
 
                 </p>
 
                 <div className="text-gray-700">
-                  Get notified when Donut is released:
+                  Get notified when Clojure Camp launches:
                 </div>
 
                 <div className="mt-2 sm:mt-2 sm:flex sm:justify-center lg:justify-start">
@@ -146,8 +144,8 @@ export default function Home() {
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 flex justify-center items-center mb-10 ">
                    <img
                      className="max-w-xs md:max-w-xs sm:max-w-xs lg:max-w-xs xl:max-w-sm"
-            src="/img/DonutLogoDonutColorRGB.png"
-            alt=""
+                     src="/img/ClojureCamp-MasterLogo-RGB-FullColor.png"
+                     alt=""
           />
 
         </div>

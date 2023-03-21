@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Donut',
-  tagline: 'sweet tools for building your web-based business',
-  url: 'https://donut.party',
+  title: 'Clojure Camp',
+  tagline: 'clojure is for everyone',
+  url: 'https://clojure.camp',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

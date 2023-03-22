@@ -4,7 +4,9 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import { BoltIcon, UserGroupIcon, ScaleIcon } from '@heroicons/react/24/outline'
+import { BoltIcon, UserGroupIcon, ScaleIcon } from '@heroicons/react/20/solid'
+import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+
 
 import styles from './index.module.css';
 
@@ -18,7 +20,7 @@ const features = [
   {
     name: 'Clojure',
     description: `Clojure's philosophy of simplicity and stability means you can stop fighting your language and focus on real features.`,
-    Icon: UserGroupIcon,
+    icon: UserGroupIcon,
   },
   {
     name: 'Code',
@@ -87,26 +89,99 @@ function handleSubmit(e){
 }
 
 
-export default function Home() {
-  return (
-      <div>
-        <div className="relative overflow-hidden bg-white">
-        <div className="mx-auto max-w-5xl">
-          <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-20 xl:pb-20">
+function Hero() {
+return(
+      <div className="relative isolate px-6  lg:px-8">
+        <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+          <svg
+            className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
+            viewBox="0 0 1155 678"
+          >
+            <path
+              fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)"
+              fillOpacity=".3"
+              d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z"
+            />
+            <defs>
+              <linearGradient
+                id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533"
+                x1="1155.49"
+                x2="-78.208"
+                y1=".177"
+                y2="474.645"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#9089FC" />
+                <stop offset={1} stopColor="#FF80B5" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-10">
+          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+                                         <img
+                     className="max-w-xs md:max-w-xs sm:max-w-xs lg:max-w-xs xl:max-w-sm"
+                     src="/img/ClojureCamp-MasterLogo-RGB-FullColor.png"
+                     alt=""
+          />
 
-            <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-              <div className="sm:text-center lg:text-left">
-                <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-                  <div className="block text-slate-800">Clojure Camp</div>{' '}
-                  <div className="block text-orange-600">Clojure is for Everyone</div>
-                </h1>
+          </div>
+          <div className="text-center">
+            <p className="mt-6 text-lg leading-8 text-gray-600">
 
-                <p className="mt-3 text-base text-gray-700 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-8 md:text-xl lg:mx-0">
+              Clojure Camp aims to be the Clojure Welcoming Committee, helping
+              new developers build a secure foundation for professional
+              programming success with Clojure. We connect new developers with a
+              passionate, kind, and caring community of mentors and fellow
+              learners, and with the Internet’s best resources for learning the
+              best programming language.
 
-                  Clojure Camp is ...
+            </p>
+            <div className="mt-10 flex items-center justify-center gap-x-6">
+              <a
+                href="#"
+                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Get started
+              </a>
+              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                Learn more <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+          <svg
+            className="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
+            viewBox="0 0 1155 678"
+          >
+            <path
+              fill="url(#ecb5b0c9-546c-4772-8c71-4d3f06d544bc)"
+              fillOpacity=".3"
+              d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z"
+            />
+            <defs>
+              <linearGradient
+                id="ecb5b0c9-546c-4772-8c71-4d3f06d544bc"
+                x1="1155.49"
+                x2="-78.208"
+                y1=".177"
+                y2="474.645"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#9089FC" />
+                <stop offset={1} stopColor="#FF80B5" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+)
+}
 
-                </p>
-
+function GetNotified(){
+ return(
+<div>
                 <div className="text-gray-700">
                   Get notified when Clojure Camp launches:
                 </div>
@@ -137,141 +212,77 @@ export default function Home() {
                   </form>
                 </div>
               </div>
+)
+}
 
-            </main>
+
+export default function Home() {
+  return (
+      <div>
+
+
+
+
+    <div className="overflow-hidden bg-white py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+          <div className="lg:pr-8 lg:pt-4">
+            <div className="lg:max-w-lg">
+              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                The community you need for your programming journey
+              </p>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+
+                Clojure Camp helps new developers build a secure foundation for
+                professional programming success with Clojure. We connect you
+                with a passionate, kind, and caring community of mentors and
+                fellow learners, and with the Internet’s best resources for
+                learning the best programming language.
+
+
+              </p>
+
+              {GetNotified()}
+            </div>
           </div>
-        </div>
-        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 flex justify-center items-center mb-10 ">
-                   <img
+                             <img
                      className="max-w-xs md:max-w-xs sm:max-w-xs lg:max-w-xs xl:max-w-sm"
                      src="/img/ClojureCamp-MasterLogo-RGB-FullColor.png"
                      alt=""
           />
-
-        </div>
-      </div>
-
-     {/* break */}
-
-      <div className="relative overflow-hidden
-                      bg-gradient-to-r from-teal-100 to-sky-200 ">
-        <div className="mx-auto max-w-5xl">
-          <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-20 xl:pb-20">
-            <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-20">
-              <div className="sm:text-center lg:text-left space-y-10">
-                <div>
-                <h2 className="text-3xl">Start fast</h2>
-                <p>
-                  Donut's goal is to ridiculously reduce the amount of effort it takes to release
-                  your product. Creating any SaaS product involves innumerable tasks that are incidental
-                  to your product's core value proposition, and Donut is meant to handle those for you.
-                </p>
-                <p>
-                  Such tasks include: figuring out how to handle forms and navigation, handling API requests
-                  and responses, wiring up OAuth, and a lot more. The Donut design approach is to identify
-                  these burdensome tasks and provide the underlying structure that lets us build an ecosystem
-                  of solutions for these tasks - without compromising your code's maintainability and
-                  extensibility. And it provides many of the solutions itself :)
-                </p>
-                </div>
-                <div>
-                <h2 className="text-3xl">Stay Fast</h2>
-                <p>
-                  Frameworks have a reputation for saving work in the short term but creating more work in the
-                  long term by obscuring how your code works (magic!) and creating a walled garden.
-                </p>
-                <p>
-                  Donut attempts to avoid these pitfalls by adding just a little structure on top of libraries
-                  that are already widely-adopted in the Clojure community, like reitit and re-frame. If Donut
-                  doesn't do what you need, you're not locked in: you can just use these well-supported tools.
-                </p>
-                </div>
-                <div>
-                <h2 className="text-3xl">Beyond the app: Build your business</h2>
-                  <p>
-                    Building your business is more than just creating core product. It's managing payments,
-                    customers, monitoring, integrations, and on and on.
-                  </p>
-                  <p>
-                    Donut's still in its infancy, but long-term it aims to take a wholistic approach to product
-                    development to support you in building your business.
-                  </p>
-                </div>
-              </div>
-            </main>
-          </div>
-        </div>
-      </div>
-
-      <div className="relative overflow-hidden bg-yellow-100 ">
-        <div className="mx-auto max-w-5xl">
-          <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-20 xl:pb-20">
-            <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-20">
-              <div className="sm:text-center lg:text-left space-y-10">
-                <div>
-                <h2 className="text-3xl">Donut Vision</h2>
-                <p>
-                  My vision for Donut is to empower anybody to be productive with Clojure. By creating
-                  a starting place that's as close as possible to the finish line, we make Clojure
-                  more appealing and help newcomers stay motivated as they learn the language.
-                </p>
-                <p>
-                  I specifically want to empower people in a way that can benefit them financially. It's tough
-                  out there, and if we could give people great tools to improve their situations, that'd
-                  be awesome!
-                </p>
-                <p>
-                  Along the way, I'd like to build a supportive community. With Clojure and kindness, there's
-                  no limit to what we can achieve! <a href="https://clojurians.slack.com/archives/C030C4Z2W0Y">Join us in the #donut channel in Clojurians slack</a>
-                </p>
-                </div>
-             </div>
-            </main>
-          </div>
-        </div>
-      </div>
-      <div className="relative overflow-hidden bg-white">
-      <div className="mx-auto max-w-5xl">
-        <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-20 xl:pb-20">
-          <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-20">
-            <div className="sm:text-center lg:text-left space-y-10">
-              <div>
-                <h2 className="text-3xl">Libraries</h2>
-                <p>
-                  Most of Donut's libraries are useful on their own:
-                </p>
-                <p>
-                  <a href="https://github.com/donut-party/system" className="text-sky-600 font-bold">donut.system</a> is a dependency injection
-                  library that introduces system and component abstractions to:
-
-                  <ul>
-                    <li>help you organize your application</li>
-                    <li>manage your application's startup and shutdown behavior</li>
-                    <li>provide a light virtual environment for your application, making it easier to mock services for testing</li>
-                  </ul>
-
-                </p>
-                <p>
-                  <a href="https://github.com/donut-party/datapotato" className="text-sky-600 font-bold">datapotato</a> lets
-                  you manage test fixtures in a way that's clear, concise, and easy to maintain. It's great
-                  for dramatically reducing test boilerplate.
-                </p>
-                <p>
-                  <a href="https://github.com/donut-party/dbxray" className="text-sky-600 font-bold">dbxray</a> provides metadata about JDBC databases
-                  and uses that data to generate specs/schemas that you can copy into your application.
-                  It can save you some time if you're just getting started with spec, malli, or plumatic schema.
-                </p>
-              </div>
-            </div>
-          </main>
-        </div>
+       </div>
       </div>
     </div>
 
 
+     {/* break */}
 
 
-            { /* <Features/> */ }
+      <div className="bg-gray-900 py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl lg:mx-0">
+          <h2 className="text-base font-semibold leading-7 text-indigo-400">Everything you need</h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">No server? No problem.</p>
+          <p className="mt-6 text-lg leading-8 text-gray-300">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste
+            dolor cupiditate blanditiis.
+          </p>
+        </div>
+        <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16">
+          {features.map((feature) => (
+            <div key={feature.name} className="relative pl-9">
+              <dt className="inline font-semibold text-white">
+                <feature.icon className="absolute top-1 left-1 h-5 w-5 text-indigo-500" aria-hidden="true" />
+                {feature.name}
+              </dt>{' '}
+              <dd className="inline">{feature.description}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </div>
+
+    { /* <Features/> */ }
     </div>
   )
 }

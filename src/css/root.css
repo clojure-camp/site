@@ -167,7 +167,7 @@
   --ifm-link-color: var(--ifm-color-primary);
   --ifm-link-decoration: none;
   --ifm-link-hover-color: var(--ifm-link-color);
-  --ifm-link-hover-decoration: underline;
+  --ifm-link-hover-decoration: none;
   --ifm-paragraph-margin-bottom: var(--ifm-leading);
   --ifm-blockquote-font-size: var(--ifm-font-size-base);
   --ifm-blockquote-border-left-width: 2px;

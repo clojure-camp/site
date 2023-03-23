@@ -131,10 +131,10 @@ return(
 
               Clojure Camp aims to be the Clojure Welcoming Committee, helping
               new developers build a secure foundation for professional
-              programming success with Clojure. We connect new developers with a
-              passionate, kind, and caring community of mentors and fellow
-              learners, and with the Internet’s best resources for learning the
-              best programming language.
+              programming success &mdash; with Clojure! We connect new
+              developers with a passionate, kind, and caring community of
+              mentors and fellow learners, and with the Internet’s best
+              resources for learning the best programming language.
 
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -183,33 +183,11 @@ function GetNotified(){
  return(
 <div>
                 <div className="text-gray-700">
-                  Get notified when Clojure Camp launches:
-                </div>
+                  <a href="https://www.meetup.com/clojure-camp"
+                     className="bg-pink-600 text-white font-bold p-2 hover:text-white hover:bg-orange-400 hover:decoration-none">
+                    Join us on Meetup!
+                  </a>
 
-                <div className="mt-2 sm:mt-2 sm:flex sm:justify-center lg:justify-start">
-                  <form method="POST"
-                        action="https://script.google.com/macros/s/AKfycbyA2z74G7c3TxuRl5eoX0RbiJNP6_sGat-XHmQvzKApuMqnvpVtJ7fI-ggISwCfNaXg/exec"
-                        onSubmit={handleSubmit}>
-                    <div>
-                      <input className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 w-48 mr-2
-                             border sm:text-sm border-gray-300 rounded-md px-3 py-2"
-                             name="Email"
-                             type="email"
-                             placeholder="Email"
-                             required/>
-                      <input className="name shadow-sm focus:ring-indigo-500 focus:border-indigo-500 w-48
-                             border sm:text-sm border-gray-300 rounded-md px-3 py-2"
-                             name="Name"
-                             type="text"
-                             placeholder="Name"/>
-                    </div>
-                    <div className="mt-2">
-                      <button className="p-2 bg-pink-600 border-0 text-white font-bold rounded-md"
-                              type="submit">Join mailing list</button>
-                      <span className="submitting ml-2 text-sm text-gray-700 italic hidden">submitting...</span>
-                      <span className="submitted ml-2 text-sm text-gray-700 hidden">success! thank you!</span>
-                    </div>
-                  </form>
                 </div>
               </div>
 )
@@ -218,26 +196,25 @@ function GetNotified(){
 
 export default function Home() {
   return (
-      <div>
+      <div class="relative isolate">
 
-
-
-
-    <div className="overflow-hidden bg-white py-24 sm:py-32">
+    <div className="overflow-hidden bg-gray-900 text-white py-24 sm:py-32 bg-gradient-to-t from-slate-800 via-slate-800 to-slate-700">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+
+          {/* left column */}
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
-              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              <p className="mt-2 text-3xl font-bold tracking-tight text-orange-300 sm:text-4xl">
                 The community you need for your programming journey
               </p>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
+              <p className="mt-6 text-lg leading-8 text-white">
 
                 Clojure Camp helps new developers build a secure foundation for
-                professional programming success with Clojure. We connect you
-                with a passionate, kind, and caring community of mentors and
-                fellow learners, and with the Internet’s best resources for
-                learning the best programming language.
+                professional programming success &mdash; with Clojure! We
+                connect you with a passionate, kind, and caring community of
+                mentors and fellow learners, and with the Internet’s best
+                resources for learning the best programming language.
 
 
               </p>
@@ -245,11 +222,16 @@ export default function Home() {
               {GetNotified()}
             </div>
           </div>
+
+          {/* right column */}
+          <div class="justify-center text-center">
                              <img
-                     className="max-w-xs md:max-w-xs sm:max-w-xs lg:max-w-xs xl:max-w-sm"
+                     class="max-w-xs md:max-w-xs sm:max-w-xs lg:max-w-xs xl:max-w-sm mx-auto"
                      src="/img/ClojureCamp-MasterLogo-RGB-FullColor.png"
                      alt=""
           />
+          </div>
+
        </div>
       </div>
     </div>

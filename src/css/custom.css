@@ -61,6 +61,7 @@
   --markdown-text-intro-c: #35404e;
   --ifm-menu-link-padding-vertical: .5rem;
   --ifm-menu-link-padding-horizontal: 0;
+  --ifm-link-hover-decoration: none;
   /* code */
   --ifm-code-background: #f0f0f0;
   --ifm-code-border-radius: .25rem;

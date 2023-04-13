@@ -129,10 +129,10 @@ function Mentors(){
 
 function OurVision() {
 return (
-    <div className="bg-slate-800 py-16 sm:pt-24 sm:pb-20">
+    <div className="bg-orange-50 py-16 sm:pt-24 sm:pb-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl lg:mx-0 text-gray-300">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Our Vision</h2>
+        <div className="mx-auto max-w-3xl lg:mx-0 text-gray-900">
+          <h2 className="text-3xl font-bold tracking-tight text-sky-800 sm:text-4xl">Our Vision</h2>
           <p className="mt-6 text-lg leading-8">
             What if Clojure became the most beginner-friendly language on the planet?
           </p>
@@ -178,6 +178,53 @@ resource for mentors and teachers in the community by:
             environment that delivers on that promise.
           </p>
 
+          <h2 className="text-3xl font-bold tracking-tight text-sky-800 sm:text-3xl">Helping new Clojure Developers</h2>
+
+          <p className="mt-6 text-lg leading-8">
+            Our thesis is that we can help new Clojure developers by owning the
+            market category of “learning and support for junior developers
+            interested in Clojure.” To own a market category is to become the
+            unambiguous choice for meeting a need. By owning this category, we
+            can eliminate the confusion and analysis paralysis newcomers
+            experience when embarking on their Clojure journey
+          </p>
+
+          <p className="mt-6 text-lg leading-8">
+            To get there, we will:
+          </p>
+          <ul>
+            <li>Provide a p2p study matchmaking service</li>
+            <li>Develop our own materials and events</li>
+            <li>Host a series of zoom meetups for beginners to answer questions around a given topic (like project organization, REPL usage, functional programming, etc)</li>
+            <li>Provide pointers to curated, opinionated learning materials from the broader Clojure community that present clear paths to proficiency</li>
+            <li>Guide developers to community hubs (Slack, ClojureVerse) and employment opportunitities</li>
+            <li>Cultivate community spaces that support sharing wins, asking for help, and general camaraderie and good vibes. Doinga great job of creating an environment where devs feel safety and support ast hey grow will help set the Clojure ecosystem apart.</li>
+          </ul>
+
+          <h2 className="text-3xl font-bold tracking-tight text-sky-800 sm:text-3xl">Helping Organizers and Mentors</h2>
+
+          <p className="mt-6 text-lg leading-8">
+            Clojure is one of the most beloved programming languages on the
+            planet. There are many members of our community who love to help
+            others learn, and we want to help them be as successful as possible
+            in their teaching and mentoring projects. Such projects might
+            include Clojure tutorials or virtual meetups.
+          </p>
+
+          <p className="mt-6 text-lg leading-8">
+            We want to support each other by providing a venue where we can:
+          </p>
+
+          <ul>
+            <li>Connect and socialize. Going alone = burnout!</li>
+            <li>Share project updates</li>
+            <li>Provide feedback and brainstorming sessions and otherwise help each other get unstuck</li>
+            <li>Host knowledge sharing sessions. E.g., what are effective ways to teach recursion?</li>
+          </ul>
+
+          <p className="mt-6 text-lg leading-8">
+            Clojure Camp will also help to curate and present these teaching projects so that they can find an audience.
+          </p>
 
         </div>
       </div>

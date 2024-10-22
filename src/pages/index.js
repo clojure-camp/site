@@ -39,9 +39,9 @@ function GetNotified(){
  return(
 <div>
   <div className="text-gray-700">
-    <a href="https://www.meetup.com/clojure-camp"
+    <a href="https://handbook.clojure.camp"
        className="bg-pink-600 text-white font-bold p-2 hover:text-white hover:bg-orange-400 hover:decoration-none">
-      Join the Meetup!
+      Start with the Handbook
     </a>
   </div>
 </div>

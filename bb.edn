@@ -1,2 +1,5 @@
-{:deps {org.babashka/http-server {:mvn/version "0.1.13"}
-        org.babashka/cli {:mvn/version "0.2.23"}}}
+{:paths ["src"]
+ :deps {org.babashka/http-server {:mvn/version "0.1.13"}
+        org.babashka/cli {:mvn/version "0.2.23"}}
+ :tasks {start {:requires [run]
+                :task (run/serve)}}}

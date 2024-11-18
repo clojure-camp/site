@@ -1,19 +1,19 @@
 # Clojure Camp Website
 
-This repo is for the public facing website of Clojure Camp.
+A public facing website for Clojure Camp.
 
 ## Setup
 
 ### Prerequisites
 
-- [babashka](https://github.com/babashka/babashka) - To run this clojure project we recommend installing [babashka](https://github.com/babashka/babashka). This will allow the running of the `bb` command.
+- [babashka](https://github.com/babashka/babashka) - To run this clojure project we recommend installing [babashka](https://github.com/babashka/babashka) on your computer. This will allow the running of the `bb` commands.
 
 ### Generating and serving the website
 
-1. Make changes in src/index.clj then run the command below.
+1. Make changes in src/root.clj then run the command below.
 
 ```
-bb src/index.clj
+bb start
 ```
 
 2. This will rebuild the website and run a local web server on:

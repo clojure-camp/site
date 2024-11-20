@@ -219,7 +219,7 @@
          "In particular, we want to unambiguously communicate that people from marginalized groups can participate in a safe environment, where they’ll be welcomed and won’t face harassment, discrimination, or other forms of exclusion. We want to be diligent about creating an environment that delivers on that promise."]
         [:h2
          {:class
-          "text-3xl font-bold tracking-tight text-sky-800 sm:text-3xl"}
+          "text-3xl font-bold tracking-tight text-sky-800 sm:text-3xl mt-12"}
          "Helping new Clojure Developers"]
         [:p
          {:class "mt-6 text-lg leading-8"}
@@ -238,7 +238,7 @@
           "Cultivate community spaces that support sharing wins, asking for help, and general camaraderie and good vibes. Doinga great job of creating an environment where devs feel safety and support ast hey grow will help set the Clojure ecosystem apart."]]
         [:h2
          {:class
-          "text-3xl font-bold tracking-tight text-sky-800 sm:text-3xl"}
+          "text-3xl font-bold tracking-tight text-sky-800 sm:text-3xl mt-12"}
          "Helping Organizers and Mentors"]
         [:p
          {:class "mt-6 text-lg leading-8"}

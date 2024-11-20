@@ -3,10 +3,10 @@
    [babashka.http-server :as http]
    [clojure-camp-site.root]))
 
-(defn build [content]
-  (spit "static/index.html" content))
+(defn build! []
+  (spit "static/index.html" (clojure-camp-site.root/html)))
 
 (defn serve []
-  (build (clojure-camp-site.root/html))
+  (build!)
   (http/serve {:port 7777 :dir "static"})
   @(promise))

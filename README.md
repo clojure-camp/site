@@ -1,41 +1,21 @@
-# Website
+# Clojure Camp Website
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+A public facing website for Clojure Camp.
 
-### Installation
+## Setup
 
-```
-$ yarn
-```
+### Prerequisites
 
-### Local Development
+- [babashka](https://github.com/babashka/babashka) - To run this clojure project we recommend installing [babashka](https://github.com/babashka/babashka) on your computer. This will allow the running of the `bb` commands.
 
-```
-$ yarn start
-```
+### Generating and serving the website
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
+1. Make changes in src/root.clj then run the command below.
 
 ```
-$ yarn build
+bb start
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+2. This will rebuild the website and run a local web server on:
 
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+- http://localhost:7777/

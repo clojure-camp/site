@@ -10,7 +10,7 @@ A public facing website for Clojure Camp.
 
 ### Local development
 
-1. Make changes in src/root.clj then run the command below.
+1. Make changes in `src/clojure_camp_site/content.clj` then run the command below.
 
 ```
 bb serve

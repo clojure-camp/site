@@ -5,4 +5,5 @@
 
 (defn build! []
   (fs/copy-tree "./resources/clojure_camp_site/assets" "static/assets" {:replace-existing true})
-  (spit "static/index.html" (clojure-camp-site.root/html)))
+  (spit "static/index.html" (clojure-camp-site.root/html))
+  (spit "static/CNAME" "clojure.camp"))

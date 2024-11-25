@@ -30,7 +30,7 @@
            "Clojure Camp helps new developers build a secure foundation for professional programming success — with Clojure! We connect you with an inclusive, kind, supportive, and fun community of mentors and fellow learners, and with the best resources for learning the best programming language."]
           [:p
            {:class "mt-6 mb-6 text-lg leading-8 text-white"}
-           "Clojure Camp is rooted in an equity ethos: it&#39;s open to all while prioritizing the experience of those who face the most hurdles in tech. Our Community is a place where Women, BIPOC folks, and LGBTQ+ folks belong."]
+           "Clojure Camp is rooted in an equity ethos: it’s open to all while prioritizing the experience of those who face the most hurdles in tech. Our Community is a place where Women, BIPOC folks, and LGBTQ+ folks belong."]
           [:div
            [:div
             {:class "text-gray-700"}
@@ -90,7 +90,7 @@
             "mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300"}
            [:p
             {:class "flex-auto"}
-            "Don&#39;t go it alone! Connect with an inclusive, kind, supportive community. Grow together and help each other get unstuck. Learning with others is more fun and more effective!"]
+            "Don’t go it alone! Connect with an inclusive, kind, supportive community. Grow together and help each other get unstuck. Learning with others is more fun and more effective!"]
            [:p
             {:class "mt-6"}
             [:a
@@ -178,7 +178,7 @@
          "A Home Base for Mentors"]
         [:p
          {:class "mt-6 text-lg leading-8 text-gray-300"}
-         "Connect with mentees and learners through our community, and get support from your fellow mentors! All of us at Clojure Camp love teaching, and we also know that it can be a solitary and taxing endeavor. We&#39;re creating a sustainable mentor community where we can learn from each other and offer each other camaraderie."]]]]
+         "Connect with mentees and learners through our community, and get support from your fellow mentors! All of us at Clojure Camp love teaching, and we also know that it can be a solitary and taxing endeavor. We’re creating a sustainable mentor community where we can learn from each other and offer each other camaraderie."]]]]
      [:div
       {:class "bg-orange-50 py-16 sm:pt-24 sm:pb-20"}
       [:div
@@ -216,10 +216,10 @@
          "we operate is just as important as what we do. We aim to create a positive, beginner-friendly, inclusive environment for learners and leaders alike. We want all who get involved with Clojure Camp to leave with a sense of having been appreciated, respected, and supported."]
         [:p
          {:class "mt-6 text-lg leading-8"}
-         "In particular, we want to unambiguously communicate that people from marginalized groups can participate in a safe environment, where they&#39;ll be welcomed and won&#39;t face harassment, discrimination, or other forms of exclusion. We want to be diligent about creating an environment that delivers on that promise."]
+         "In particular, we want to unambiguously communicate that people from marginalized groups can participate in a safe environment, where they’ll be welcomed and won’t face harassment, discrimination, or other forms of exclusion. We want to be diligent about creating an environment that delivers on that promise."]
         [:h2
          {:class
-          "text-3xl font-bold tracking-tight text-sky-800 sm:text-3xl"}
+          "text-3xl font-bold tracking-tight text-sky-800 sm:text-3xl mt-12"}
          "Helping new Clojure Developers"]
         [:p
          {:class "mt-6 text-lg leading-8"}
@@ -238,7 +238,7 @@
           "Cultivate community spaces that support sharing wins, asking for help, and general camaraderie and good vibes. Doinga great job of creating an environment where devs feel safety and support ast hey grow will help set the Clojure ecosystem apart."]]
         [:h2
          {:class
-          "text-3xl font-bold tracking-tight text-sky-800 sm:text-3xl"}
+          "text-3xl font-bold tracking-tight text-sky-800 sm:text-3xl mt-12"}
          "Helping Organizers and Mentors"]
         [:p
          {:class "mt-6 text-lg leading-8"}

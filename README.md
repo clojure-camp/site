@@ -10,7 +10,7 @@ A public facing website for Clojure Camp.
 
 ### Local development
 
-1. Make changes in `src/clojure_camp_site/content.clj` then run the command below.
+1. Make changes to a page clj file located in `src/clojure_camp_site/pages/` then run the command below.
 
 ```
 bb serve
@@ -19,3 +19,6 @@ bb serve
 2. This will rebuild the website and run a local web server on:
 
 - http://localhost:7777/
+
+### Routes
+You can find the page route mapping located in src/clojure_camp_site/pages.clj

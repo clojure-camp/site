@@ -1,26 +1,39 @@
 {:paths ["src" "resources"]
  :deps {markdown-clj/markdown-clj {:mvn/version "1.12.3"}}
  :pods {org.babashka/fswatcher {:version "0.0.5"}}
- :tasks {serve {:requires [clojure-camp-site.serve]
-                :task (clojure-camp-site.serve/serve!)}
-         build {:requires [clojure-camp-site.build]
-                :task (clojure-camp-site.build/build!)}
-         watch {:requires ([pod.babashka.fswatcher :as fw]
-                           [babashka.fs :as fs]
-                           [clojure-camp-site.build]
-                           [clojure-camp-site.serve])
+ :tasks {build {:requires [[babashka.fs :as fs]
+                           [clojure-camp-site.base :as base]
+                           [clojure-camp-site.pages :as pages]]
+                :task
+                (do
+                  (println "Building...")
+                  (fs/create-dirs "static")
+                  (fs/copy-tree "./resources/clojure_camp_site/assets" "static/assets" {:replace-existing true})
+                  (doseq [[path f] pages/pages
+                          :let [target-path (str "static/" path "/index.html")]]
+                    (fs/create-dirs (fs/parent target-path))
+                    (spit target-path (base/build f)))
+                  (spit "static/CNAME" "clojure.camp"))}
+         serve {:extra-deps {org.babashka/http-server {:mvn/version "0.1.13"}}
+                :requires [[babashka.http-server :as http]]
+                :task (do
+                        (run 'build)
+                        (http/serve {:port 7777 :dir "static"})
+                        (deref (promise)))}
+         watch {:requires [[pod.babashka.fswatcher :as fw]
+                           [babashka.fs :as fs]]
                 :task (do
                         (println "Watching...")
                         (doseq [dir ["src" "resources"]]
                           (fw/watch dir
                                     (fn [event]
-                                      (println "Rebuilding...")
+                                      (println "Reloading...")
                                       ;; reload all files
                                       (->> (fs/glob "src" "**.clj")
                                            (map (fn [f]
                                                   (load-file (.toString f))))
                                            doall)
-                                      (clojure-camp-site.build/build!))
+                                      (run 'build))
                                     {:recursive true
                                      :delay-ms 250}))
-                        (clojure-camp-site.serve/serve!))}}}
+                        (run 'serve))}}}

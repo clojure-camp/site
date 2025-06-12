@@ -1,9 +1,8 @@
-(ns clojure-camp-site.root
+(ns clojure-camp-site.base
   (:require
-   [hiccup2.core :as h]
-   [clojure-camp-site.content]))
+   [hiccup2.core :as h]))
 
-(defn html []
+(defn build [page-fn]
   (str
    (h/html
     (h/raw "<!DOCTYPE html>")
@@ -30,7 +29,7 @@
        {:data-rh "true",
         :name "docsearch:docusaurus_tag",
         :content "default"}]
-      [:link {:data-rh "true", :rel "icon", :href "/img/favicon.ico"}]
+      [:link {:data-rh "true", :rel "icon", :href "/assets/favicon.ico"}]
       [:link
        {:data-rh "true", :rel "canonical", :href "https://clojure.camp/"}]
       [:link
@@ -43,26 +42,10 @@
         :rel "alternate",
         :href "https://clojure.camp/",
         :hreflang "x-default"}]
-      [:link
-       {:rel "alternate",
-        :type "application/rss+xml",
-        :href "/blog/rss.xml",
-        :title "Clojure Camp RSS Feed"}]
-      [:link
-       {:rel "alternate",
-        :type "application/atom+xml",
-        :href "/blog/atom.xml",
-        :title "Clojure Camp Atom Feed"}]
-      [:link {:rel "stylesheet", :href "/assets/css/styles.e080ba4c.css"}]
-      [:link
-       {:rel "preload",
-        :href "/assets/js/runtime~main.baf95306.js",
-        :as "script"}]
-      [:link
-       {:rel "preload", :href "/assets/js/main.f656a803.js", :as "script"}]
+      [:link {:rel "stylesheet", :href "/assets/css/markdown.css"}]
       [:meta
        {:name "viewport",
         :content "width=device-width, initial-scale=1.0",
         :data-rh "true"}]]
      [:body
-      (clojure-camp-site.content/content)]])))
+      (page-fn)]])))

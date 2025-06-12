@@ -21,4 +21,11 @@ bb serve
 - http://localhost:7777/
 
 ### Routes
-You can find the page route mapping located in src/clojure_camp_site/pages.clj
+You can find the page route mapping located in `src/clojure_camp_site/pages.clj`
+
+### Update Sponsorship Content
+The sponsorship content is generated from a markdown file located at `resources/clojure_camp_site/sponsorship.md`.
+You can update this markdown file and re-serve the website to observe changes
+```
+bb serve
+```

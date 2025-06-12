@@ -1,11 +1,8 @@
-(ns clojure-camp-site.content)
+(ns clojure-camp-site.pages.index)
 
-(defn content []
+(defn body []
   (list
-
    [:div
-    {:id "__docusaurus", :style "pointer-events: auto;"}
-    [:div {:id "docusaurus-base-url-issue-banner-container"}]
     [:div
      {:class "relative isolate", :style "pointer-events: auto;"}
      [:div

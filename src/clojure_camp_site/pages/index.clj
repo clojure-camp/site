@@ -7,14 +7,25 @@
    {:class "relative isolate"}
    [:div {:style {:min-height "95vh"
                   :background "#181742 linear-gradient(0deg, #1f3356, #151449)"
-                  :position "relative"}}
+                  :position "relative"
+                  :overflow "hidden"}}
+    [:style
+     "@keyframes rotate {
+     from {
+           transform: rotate(0deg);
+           }
+     to {
+         transform: rotate(360deg);
+         }
+     }"]
     [:div {:style {:position "absolute"
                    :pointer-events "none"
+                   :animation "rotate 3600s linear infinite"
                    :top 0
                    :left 0
                    :right 0
                    :bottom 0}}
-     [stars/star-field {:w 2000 :h 600}]]
+     [stars/star-field {:w 2000 :h 2000}]]
     [:div {:style {:background "url(/assets/mountains.png) right bottom repeat-x"
                    :background-size "contain"
                    :pointer-events "none"

@@ -1,7 +1,7 @@
 {:paths ["src" "resources"]
  :deps {markdown-clj/markdown-clj {:mvn/version "1.12.3"}
         io.github.escherize/huff {:mvn/version "0.2.13"}}
- :pods {org.babashka/fswatcher {:version "0.0.5"}}
+ ;; :pods {org.babashka/fswatcher {:version "0.0.5"}}
  :tasks {build {:requires [[babashka.fs :as fs]
                            [clojure-camp-site.base :as base]
                            [clojure-camp-site.pages :as pages]]

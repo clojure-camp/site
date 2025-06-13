@@ -10,11 +10,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build static files with babashka
-        uses: tzafrirben/babashka-docker-action@v1.1
-        id: bb_shell
+      - name: Setup Java
+        uses: actions/setup-java@v4
         with:
-          bb_cmd: "bb build"
+          distribution: 'adopt'
+          java-version: '17'
+
+      - name: Install clojure tools
+        uses: DeLaGuardo/setup-clojure@13.4
+        with:
+          bb: 1.12.196
+
+      - name: Execute script
+        run: "bb build"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

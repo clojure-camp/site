@@ -25,6 +25,7 @@
                    :bottom 0}}]
     [:div {:style {:background "url(/assets/campsite.png) left bottom no-repeat"
                    :background-size "contain"
+                   :transform "scaleX(-1)"
                    :pointer-events "none"
                    :position "absolute"
                    :top "60%"
@@ -37,7 +38,7 @@
       {:position "relative"
        :z-index 10
        :padding-top "5rem"
-       :max-width "80rem"
+       :max-width "76rem"
        :margin "0 auto"
        :display "flex"}
       :class "items-center gap-4 justify-between flex-wrap"}
@@ -62,29 +63,11 @@
           "bg-pink-600 text-white font-bold p-2 hover:text-white hover:bg-orange-400 hover:decoration-none"}
          "Start with the Handbook"]]]]
      [:img
-      {:style {:height "30rem"}
+      {:style {:height "20rem"
+               :width "50%"
+               :object-fit "contain"}
        :src "/assets/logomark.svg"
-       :alt "Clojure Camp Logo - a lambda stylized as a constellation of stars"}]]
-    ]
-   #_[:div
-    {:class
-     "overflow-hidden bg-gray-900 text-white py-24 sm:py-32 bg-gradient-to-t from-slate-800 via-slate-800 to-slate-700",
-     :style "pointer-events: auto;"}
-    [:div
-     {:class "mx-auto max-w-7xl px-6 lg:px-8"}
-     [:div
-      {:class
-       "mx-auto grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"}
-      [:div
-       {:class "lg:pr-8 lg:pt-4"}
-       ]
-      [:div
-       {:class "justify-center text-center"}
-       [:img
-        {:class
-         "max-w-xs md:max-w-xs sm:max-w-xs lg:max-w-xs xl:max-w-sm mx-auto",
-         :src "/assets/ClojureCamp-SecondaryLogo-RGB-FullColor.png",
-         :alt ""}]]]]]
+       :alt "Clojure Camp Logo - a lambda stylized as a constellation of stars"}]]]
    [:div
     {:class "bg-gray-900 py-16 sm:pt-24 sm:pb-20"}
     [:div

@@ -63,10 +63,10 @@
           "bg-pink-600 text-white font-bold p-2 hover:text-white hover:bg-orange-400 hover:decoration-none"}
          "Start with the Handbook"]]]]
      [:img
-      {:style {:height "20rem"
+      {:style {:height "28rem"
                :width "50%"
                :object-fit "contain"}
-       :src "/assets/logomark.svg"
+       :src "/assets/logomark-transparent.svg"
        :alt "Clojure Camp Logo - a lambda stylized as a constellation of stars"}]]]
    [:div
     {:class "bg-gray-900 py-16 sm:pt-24 sm:pb-20"}

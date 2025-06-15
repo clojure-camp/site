@@ -1,12 +1,14 @@
 ## What is Clojure Camp?
 
-Clojure Camp is a vibrant gathering place where developers come together to learn, share, and grow their skills Clojure together. From those just starting out in programming to seasoned developers new to Clojure, our camp offers an inclusive, supportive, and collaborative environment. Here, curious minds connect with experienced mentors and peers, gaining access to the best resources to build a strong, secure foundation for professional success using this powerful language.
+Clojure Camp is an online community; operating on a Discord server. 
+Learners join to ask questions, pair with others and attend learning events (like lessons from experienced devs and group programming sessions). There are a few events every week and hundreds of members.
 
 ## Why sponsor Clojure Camp?
 
-By sponsoring Clojure Camp, your company demonstrates a commitment to nurturing the future of the Clojure community. Your support helps create an environment where talent thrives, making it easier for passionate developers to grow and contribute.
-
-Sponsorship also gives you direct exposure to a highly skilled pool of Clojure developers. This unique access can be a powerful advantage for companies looking to recruit and retain top-tier Clojure professionals.
+Why sponsor Clojure Camp?
+ - **Support clojure**: demonstrate a commitment to nurturing the future of the Clojure community
+ - **Meet devs**: get direct exposure to a highly skilled pool of Clojure developers 
+ - **Brand recognition**: increase your company's brand exposure in the Clojure community for attracting or retaining talent
 
 Clojure Camp currently uses funds for:
 - Sponsoring learners to attend conferences
